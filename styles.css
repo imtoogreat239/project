@@ -1,0 +1,103 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff; /* White text */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #0044cc, #d60000); /* Blue to red gradient */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Projects Section */
+.projects {
+    padding: 40px 20px;
+    background-color: #121212; /* Darker background for projects section */
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    color: #0099ff; /* Blue text for projects header */
+    margin-bottom: 30px;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-button {
+    background-color: #d60000; /* Red buttons */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #ff3d3d; /* Light red on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #121212;
+    padding: 20px 0;
+    text-align: center;
+    color: #bbb;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .projects h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
